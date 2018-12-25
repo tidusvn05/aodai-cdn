@@ -1,0 +1,697 @@
+.news-title {
+	display: none;
+}
+
+/*.banner-dv{
+	background: url(../images/chronicle/bg.jpg) center center no-repeat;
+}*/
+
+.banner-dv {
+    height: 410px;
+    position: relative;
+}
+
+.banner-dv-content {
+	margin: 0px;
+	padding: 50px 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.item1-cus {
+    height: 410px;
+}
+
+.item2-cus {
+    height: 410px;
+}
+
+.owl-carousel .owl-wrapper-outer {
+    height: 410px;
+    display: inline-block;
+}
+
+.owl-theme .owl-controls {
+    display: none !important;
+}
+
+.proposed h4 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.proposed ul li {
+    width: 100%;
+    margin-right: 0px; 
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.material-galerry {
+	text-align: center;
+}
+
+.material-galerry1 {
+	height: auto;
+	margin-bottom: 0px;
+}
+
+.cus-1 {
+    margin-right: 0px;
+    background: url(../images/chronicle/material-1.jpg) center center no-repeat;
+    background-size: cover;
+    margin-bottom: 4px;
+}
+
+.cus-2 {
+    margin-right: 0px;
+    background: url(../images/chronicle/material-2.jpg) center center no-repeat;
+    background-size: cover;
+    margin-bottom: 4px;
+}
+
+.cus-3 {
+    margin-right: 0px;
+    background: url(../images/chronicle/material-3.jpg) center center no-repeat;
+    background-size: cover;
+    margin-bottom: 4px;
+}
+
+.cus-4 {
+    margin-right: 0px;
+    background: url(../images/chronicle/material-4.jpg) center center no-repeat;
+    background-size: cover;
+    margin-bottom: 4px;
+}
+
+.cus-5 {
+    margin-right: 0px;
+    background: url(../images/chronicle/material-5.jpg) center center no-repeat;
+    background-size: cover;
+    margin-bottom: 4px;
+}
+
+.cus-6 {
+    margin-right: 0px;
+    background: url(../images/chronicle/material-6.jpg) center center no-repeat;
+    background-size: cover;
+    margin-bottom: 4px;
+}
+
+.cus-7 {
+    margin-right: 0px;
+    background: url(../images/chronicle/material-7.jpg) center center no-repeat;
+    background-size: cover;
+    margin-bottom: 4px;
+}
+
+.cus-1 {
+	margin-right: 0px;
+}
+
+.cus-3 {
+	margin-right: 0px;
+}
+
+.cus-4 {
+	margin-right: 0px;
+}
+
+.material-galerry2 {
+	height: auto;
+	margin-bottom: 0px;
+}
+
+.material-galerry3 {
+	height: auto;
+}
+
+.plan-A,.plan-B,.plan-C {
+	margin-right: 0px;
+    min-height: 300px;
+    padding-bottom: 20px;
+}
+
+.plan-A {
+	margin-bottom: 5px;
+}
+
+.plan-B {
+	margin-bottom: 5px;
+}
+
+.construction ul li {
+	width: 100%;
+	margin-bottom: 20px;
+	margin-right: 0px;
+}
+
+.reference-price {
+    margin-top: 15px !important;
+}
+
+#scrollTopDevice {
+    z-index: 10;
+}
+
+.banner-dv-content h1 {
+    display: none;
+}
+
+/* ======================================================== 
+						device mobile
+======================================================== */
+@media (min-width: 320px) and (max-width: 479px){
+.banner-dv-content h4 {
+    font-size: 35px;
+}
+
+.proposed h6 {
+	font-size: 23px;
+}
+
+.proposed h4 {
+	font-size: 15px;
+	line-height: 30px;
+}
+
+.material-over h4 {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.material-over {
+	padding: 35px 0 5px;
+}
+
+.construction h6 {
+	font-size: 27px;
+}
+
+.construction ul {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.construction-cus h6 {
+	font-size: 25px;
+}
+
+.construction-cus h4 {
+	font-size: 19px;
+}
+
+.ideal h6 {
+	font-size: 28px;
+}
+
+.ideal {
+    padding: 35px 0 0;
+}
+
+.support-sales-1 h6 {
+	font-size: 28px;
+}
+
+.support-sales-1 h4 {
+	font-size: 17px;
+	margin-top: 10px;
+}
+
+.support-sales-1 ul {
+	display: flex;
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+    left: 0%; 
+    margin-left: 0px; 
+    float: left;
+}
+
+.support-sales-1 ul li {
+	width: 100%;
+	padding: 0 20px;
+	margin-right: 0px; 
+}
+
+.support-sales-1 ul li p {
+	margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.cus-1,.cus-2,.cus-3,.cus-4,.cus-5,.cus-6,.cus-7 {
+    height: 280px;
+}
+
+.support-sales-1 h4 {
+    line-height: 30px;
+}
+
+}
+
+/*----------------480 - 767----------------------*/
+@media (min-width: 480px) and (max-width: 767px){
+.banner-dv-content p {
+	font-size: 35px;
+}
+
+.proposed h6 {
+	font-size: 30px;
+}
+
+.proposed h4 {
+	line-height: 35px;
+	font-size: 19px;
+}
+
+.material-over h4 {
+	margin-top: 10px;
+	line-height: 35px;
+}
+
+.cus-1,.cus-2,.cus-3,.cus-4,.cus-5,.cus-6,.cus-7 {
+    height: 280px;
+}
+
+.construction ul {
+	padding-left: 30px;
+    padding-right: 30px;
+}
+
+.material-over h6 {
+	font-size: 30px;
+}
+
+.construction h6 {
+	font-size: 30px;
+}
+
+.ideal {
+    padding: 35px 0 0;
+}
+
+.support-sales-1 h6 {
+    font-size: 30px;
+}
+
+.support-sales-1 h4 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.chronicle-logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.support-sales-1 h4 {
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.support-sales-1 ul {
+	display: flex;
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+    left: 0%; 
+    margin-left: 0px; 
+    float: left;
+}
+
+.support-sales-1 ul li {
+    width: 100%;
+    padding: 0 90px;
+    margin-right: 0px;
+}
+
+.ideal h6 {
+	font-size: 25px;
+}
+
+.plan-A,.plan-B,.plan-C {
+	padding:30px;
+}
+
+.plan-A img,.plan-B img,.plan-C img {
+	width: 100%;
+}
+
+}
+
+/*----------------768 - 1023----------------------*/
+@media (min-width: 768px) and (max-width: 1023px){
+.proposed ul {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.proposed ul li {
+	width: 33.33%;
+}
+
+.proposed ul li img {
+	height: auto;
+}
+
+.proposed h6 {
+	font-size: 44px;
+}
+
+.proposed h4 {
+	font-size: 23px;
+}
+
+.material-over h6 {
+	font-size: 44px;
+}
+
+.material-over h4 {
+	font-size: 23px;
+	margin-top: 10px;
+}
+
+.material-over {
+	padding: 35px 0 0;
+}
+
+.construction ul {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.construction-cus h6 {
+    font-size: 34px;
+}
+
+.construction-cus h4 {
+    font-size: 23px;
+    line-height: 30px;
+}
+
+.construction h6 {
+    font-size: 44px;
+}
+
+.ideal h6 {
+    font-size: 42px;
+}
+
+.plan-A,.plan-B,.plan-C {
+    padding: 30px;
+}
+
+.plan-A img {
+	width: 100%;
+}
+
+.plan-B img {
+	width: 100%;
+}
+
+.plan-C img {
+	width: 100%;
+}
+
+.plan-name {
+    margin-top: 30px;
+    font-size: 38px;
+} 
+
+.reference-price {
+	font-size: 30px !important;
+}
+
+ul.circle {
+    font-size: 30px;
+}
+
+ul.circle li {
+    line-height: 45px;
+}
+
+div.detail-news p:nth-of-type(2) {
+    font-size: 30px !important;
+}
+
+.support-sales-1 h6 {
+    font-size: 44px;
+}
+
+.support-sales-1 h4 {
+    font-size: 27px;
+    line-height: 45px;
+}
+
+.support-sales-1 ul {
+	display: flex;
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+    left: 0%; 
+    margin-left: 0px; 
+    float: left;
+}
+
+/*.support-sales-1 ul li {
+    width: 100%;
+    padding: 0 90px;
+    margin-right: 0px;
+}*/
+
+.support-sales-1 ul li {
+    width: 33% !important;
+    padding: 0 8px;
+    margin-right: 0;
+}
+
+.support-sales-1 ul li p {
+	font-size: 30px;
+}
+
+.support-sales-1 {
+    padding-bottom: 30px;
+}
+
+.cus-1,.cus-2,.cus-3,.cus-4,.cus-5,.cus-6,.cus-7 {
+    height: 280px;
+}
+
+
+.material-galerry .material-galerry1 div.cus-1 {
+	width: 40% !important;
+	margin-right: 5px;
+}
+
+.material-galerry .material-galerry1 div.cus-2 {
+	width: 24% !important;
+	margin-right: 5px;
+}
+
+.material-galerry .material-galerry1 div.cus-3 {
+	width: 34.5% !important;
+}
+
+.material-galerry .material-galerry2 div.cus-4 {
+	width: 64.55% !important;
+	margin-right: 5px;
+}
+
+.material-galerry .material-galerry2 div.cus-5 {
+	width: 34.7% !important;
+}
+
+.material-galerry .material-galerry3 div.cus-6 {
+	width: 54% !important;
+	margin-right: 5px;
+}
+
+.material-galerry .material-galerry3 div.cus-7 {
+	width: 45.2% !important;
+}
+
+.construction ul li {
+    width: 49%;
+}
+
+.construction ul li:nth-child(odd) {
+	margin-right: 10px;
+}
+
+.construction ul li {
+    margin-bottom: 15px;
+}
+.construction ul li h6 {
+	font-size: 33px;
+}
+
+.construction {
+    padding: 35px 0;
+}
+
+}
+
+/* ======================================================== 
+						device ipad
+======================================================== */
+@media only screen and (min-width: 1024px) {
+
+.proposed ul li {
+	width: 33.33%;
+}
+
+.proposed h6 {
+    font-size: 44px;
+}
+
+.proposed h4 {
+    font-size: 28px;
+}
+
+.material-over h6 {
+	font-size: 44px;
+}
+
+.material-over h4 {
+	font-size: 30px;
+}
+
+.material-over {
+    padding: 35px 0 0;
+}
+
+.construction h6 {
+	font-size: 44px;
+}
+
+.cus-1,.cus-2,.cus-3 {
+    height: 280px;
+}
+
+.cus-4,.cus-5 {
+    height: 435px;
+}
+
+.cus-6,.cus-7 {
+    height: 496px;
+}
+
+.material-galerry .material-galerry1 div.cus-1 {
+	width: 40% !important;
+	margin-right: 5px;
+}
+
+.material-galerry .material-galerry1 div.cus-2 {
+	width: 24% !important;
+	margin-right: 5px;
+}
+
+.material-galerry .material-galerry1 div.cus-3 {
+	width: 35% !important;
+}
+
+.material-galerry .material-galerry2 div.cus-4 {
+	width: 64.55% !important;
+	margin-right: 5px;
+}
+
+.material-galerry .material-galerry2 div.cus-5 {
+	width: 34.95% !important;
+}
+
+.material-galerry .material-galerry3 div.cus-6 {
+	width: 54% !important;
+	margin-right: 5px;
+}
+
+.material-galerry .material-galerry3 div.cus-7 {
+	width: 45.5% !important;
+}
+
+.material-over {
+    padding: 35px 0;
+}
+
+.construction ul {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.construction ul li {
+    width: 50%;
+}
+
+.construction ul li h6 {
+	font-size: 39px;
+}
+
+.construction-cus h4 {
+    font-size: 28px;
+}
+
+.construction {
+    padding: 35px 0;
+}
+
+.ideal h6 {
+    font-size: 44px;
+}
+
+.plan-custom .plan-A {
+	width: 33% !important;
+	margin-right: 5px;
+}
+
+.plan-custom .plan-B {
+	width: 33% !important;
+	margin-right: 5px;
+}
+
+.plan-custom .plan-C {
+	width: 33% !important;
+}
+
+.support-sales-1 h6 {
+    font-size: 44px;
+}
+
+.support-sales-1 h4 {
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.support-sales-1 ul {
+	display: flex;
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+    left: 0%; 
+    margin-left: 0px; 
+    float: left;
+    width: 100%;
+}
+
+.support-sales-1 ul li {
+    width: 33% !important;
+    padding: 0 8px;
+    margin-right: 0;
+}
+
+.support-sales-1 ul li p {
+    font-size: 28px;
+}
+
+.support-sales-1 {
+	padding-bottom: 30px;
+}
+
+.banner-dv-content p {
+    font-size: 30px;
+}
+}

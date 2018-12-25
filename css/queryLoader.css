@@ -1,0 +1,38 @@
+.QOverlay {
+	background: #000 url(../images/loading_logo.png) center 40% no-repeat;
+	z-index: 9999;
+}
+
+.QLoader {
+	background-color: #CCCCCC;
+	height: 1px;
+}
+.QLoader_number{
+	color: #fff;
+	font-size: 37px;
+	color: #fff;
+	text-align: center;
+	line-height: 18px;
+	padding-top: 3.5%;
+	font-family: 'gotham_narrowbook_italic';
+}
+.left_bg{
+	width: 75%;
+	height: 100%;
+	background: url(../images/bg_left.png) 0 0 no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	background-size: 100% 100%;
+}
+.right_bg{
+	width: 75%;
+	height: 100%;
+	position: absolute;
+	background: url(../images/bg_right.png) right 0 no-repeat;
+	top: 0;
+	right: 0;
+	display: none;
+	background-size: 100% 100%;
+}
