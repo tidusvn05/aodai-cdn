@@ -1,0 +1,141 @@
+/*meiryo_regular*/
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: url('../fonts/HelveticaNeue.eot') format('embedded-opentype');
+	src: url('../fonts/HelveticaNeue.ttf')  format('truetype'), url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg'),url('../fonts/HelveticaNeue.woff') format('woff'),;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeue-Bold';
+	src: url('../fonts/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeue-Bold.woff') format('woff'), url('../fonts/HelveticaNeue-Bold.ttf')  format('truetype'), url('../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@charset "utf-8";
+
+html, body{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'HelveticaNeue-Bold';
+	font-size: 12px;
+}
+
+.w-50 > p {
+  width: 35%;
+}
+
+.w-50 > input {
+	width: 65%;
+}
+
+.top-contact p.phone {
+	right: 2px;
+}
+
+.rows-3-custom {
+	height: 100px;
+}
+
+#scrollSearch {
+	font-size: 13px;
+}
+
+/* ======================================================== 
+            320 - 479
+======================================================== */
+@media (min-width: 320px) and (max-width: 479px){
+
+.w-50 > p {
+  width: 50%;
+  font-size: 14px;
+}
+
+.w-50 > input {
+  width: 50%;
+}
+
+.rows-3-custom {
+	height: 97px;
+}
+}
+
+/* ======================================================== 
+            480 - 767
+======================================================== */
+@media (min-width: 480px) and (max-width: 767px){
+.logo-branch li {
+	height: 78px;
+}
+}
+/* ======================================================== 
+            768 - 1024
+======================================================== */
+@media (min-width: 768px) and (max-width: 1000px){
+.logo-branch li {
+	height: 88px;
+}
+
+}
+
+/* ======================================================== 
+            1000 - 1024
+======================================================== */
+@media (min-width: 1000px) and (max-width: 1024px){
+.logo-branch li {
+	height: 85px;
+}
+
+}
+
+/* ======================================================== 
+            768 - 1000 			ipad doc
+======================================================== */
+@media (min-width: 768px) and (max-width: 1024px){
+.logo-branch .lotus img {
+	margin-top: 0;
+}
+
+.logo-branch .chroncle1 img {
+  top: 15px;
+  max-width: 80%;
+}
+
+.logo-branch li {
+  height: 90px;
+}
+
+.logo-branch .chroncle2 img {
+  top: 5px;
+  max-width: 80%;
+}
+}
+
+
+/* ======================================================== 
+            1024 - 1280 
+======================================================== */
+@media (min-width: 1024px) and (max-width: 1280px){
+
+.logo-branch .lotus img {
+	margin-top: 13px;
+	width: 175px;
+}
+
+.logo-branch .chroncle1 img {
+  top: 23px;
+  max-width: 80%;
+}
+
+.logo-branch li {
+  height: 110px;
+}
+
+.logo-branch .chroncle2 img {
+  top: 5px;
+  max-width: 80%;
+}
+
+}
