@@ -1,0 +1,15 @@
+.menu-item ul ol.sub-1-4{
+}
+.menu-item ul > li a{
+    padding-left: 25px;
+    padding-right: 11px;
+}
+ol.sub-menu li a span{
+    padding: 0;
+}
+.menu-item ul li ol.sub-menu li a{
+    margin: 0;
+}
+.menu-item ul li ol.sub-menu li a span{
+    padding: 0 5px 0 12px;
+}

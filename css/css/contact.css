@@ -1,0 +1,176 @@
+.popup-main{
+    width: 744px;
+    height: auto;
+    border: 3px solid #00AEEF;
+    padding: 10px;
+    font-size: 13px;
+    color: #333;
+}
+.popup-main .close{display: block;text-align: right;}
+.popup-main .close a{
+    color: #754C24;
+    font-size: 12px;
+}
+.title-popup{
+    background: url(../images/bg-title-popup.jpg) repeat-x top left;
+    height: 40px;
+    margin-top: 10px;
+}
+.title-popup span{
+    background: url(../images/icon-mail-title.png) no-repeat left top;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    padding-left: 51px;
+    margin-left: 10px;
+}
+.title-popup p{
+    color: #333333;
+    font-size: 13px;
+}
+.popup .red{
+    color: #FF0000;
+    font-size: 14px;
+    font-weight: bold;
+}
+.error{
+    color: #FF0000;
+}
+.input-wrap table{
+     border-collapse:collapse;
+     border-spacing: 0;
+}
+.input-wrap td{
+    border: 1px solid #E6E6E6;
+    padding: 24px 10px;
+    background: #E6F7FF;
+    font-size: 12px;
+}
+.input-wrap th {
+    background-color: #FFFAE3;
+    border: 1px solid #D7D4D2;
+    font-weight: bold;
+    padding: 8px 10px;
+    width: 160px;
+    font-size: 13px;
+    text-align: left;
+}
+.input-wrap table > td{
+    background: red;
+}
+.input-wrap .input-text{
+    display: block;
+}
+.input-wrap .input-text input{
+    width: 332px;
+    height: 22px;
+    border: 1px solid #B3B3B3;
+    line-height: 22px;
+    padding-left: 5px;
+}
+.input-wrap ul{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.input-wrap li {
+  float: left;
+  padding: 5px 15px 5px 0;
+  list-style: none;
+}
+.input-wrap li input[type="radio"] {
+  display: block;
+  float: left;
+  margin-right: 2px;
+  margin-top: 3px;
+  vertical-align: middle;
+}
+.input-wrap li span{
+    font-size: 13px;
+}
+.next-step{
+    text-align: center;
+}
+.wrap-button{
+    display: block;
+    overflow: hidden;
+    width: 253px;
+    margin: 0 auto;
+}
+.next-step span .next{
+    display: block;
+    background: #84292e;
+    height: 30px;
+    width: 286px;
+    overflow: hidden;
+    margin: 0 auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+.next-step span input{
+    width: 100%;
+    background: #84292e url(../images/icon-next.png) no-repeat left center;
+    border: none;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.prev-step2{
+    font-size: 13px;
+}
+.prev, .next{
+    display: block;
+    float: left;
+}
+.prev{width: 118px}
+.next{width: 115px; margin-left: 17px !important;}
+.next-step span .prev{
+    display: block;
+    background: #84292e;
+    height: 30px;
+    overflow: hidden;
+    margin: 0 auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+.next-step .prev input{
+    width: 100%;
+    background: #84292e url(../images/icon-prev.png) no-repeat left center;
+    border: none;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.reserve_error{
+    padding: 5px;
+    border: 1px solid #D20808;
+}
+.reserve_error strong{
+    color: #D20808;
+    font-weight: bold;
+}
+.ullist li{
+    list-style: none;
+}
+.ullist li a{
+    text-decoration: none;
+    color: #D20808;
+}
+
+.modal-dialog
+{
+    overflow: hidden;
+}

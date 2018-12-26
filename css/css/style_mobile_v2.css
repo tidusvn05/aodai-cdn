@@ -1,0 +1,201 @@
+.apartment-info div.name-width-33{
+	width: 33.33333%;
+	float: left;
+	overflow: hidden;
+	text-align: center;
+}
+
+.apartment-info div.name-width-33 span{
+	float: left;
+	display: inline;
+	width: 100%;
+}
+
+.apartment-info div.name-width-66{
+	width: 66.66667%;
+	float: left;	
+	border-left: 3px solid #cccccc;
+}
+
+.list-left{
+	width: 33.33333%;
+	float: left;
+	display: table;
+	height: 74px;
+}
+
+.list-left-table{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.list-left img{
+	max-height: 75px;
+	width: auto;
+}
+
+.list-right{
+	width: 66.66667%;
+	float: left;
+	border-left: 3px solid #cccccc;
+}
+
+.list-right p{
+	font-size: 9px;
+}
+
+.apartment-info div.rent{
+	border-top: 0;
+}
+
+.apartment-info div.name{
+	height: 25px;
+	line-height: 25px;
+}
+
+.w-2{
+	height: 50px;
+}
+
+.apartment-info div.rent{
+	height: 50px;
+}
+
+.w-2 div{
+	height: 25px;
+	line-height: 25px;
+}
+
+.apartment-info div.floor{
+	height: 25px;	
+}
+
+.w-20{
+	height: 25px;
+}
+
+.w-20 p{
+	line-height: 25px;
+}
+
+.apartment-info div.name-width-33{
+	font-size: 8px;
+	padding: 0 1px;
+	line-height: 12px;
+}
+
+#scrollTopDevice{
+	position: fixed;
+	background-color: rgba(248,155,96,0.9);
+	color: #fff;
+	font-size: 15px;
+	height: 65px;
+	width: 65px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	padding: 15px 0 0 0;
+	/*top: 50%;
+	margin-top: -38px;*/
+	right: 0;
+	display: none;
+	z-index: 1;
+	bottom: 145px;
+}
+
+#scrollTopDevice h5{
+	float: left;
+	display: inline;
+	text-align: center;
+	width: 100%;
+}
+
+.slide-wrapper{
+	width: 100% !important;
+}
+
+.advanced-slider{
+	width: 100% !important;
+	margin-top: 10px !important;
+}
+
+.arrows{
+	display: none;
+}
+
+#responsive-slider .slide-arrows{
+	visibility: inherit !important;
+}
+
+.slide-arrows a.previous,.slide-arrows a.next{
+	opacity: 1 !important;
+}
+
+.slide-arrows a.next{
+	width: 19px !important;
+	height: 32px !important;
+	background: url(../images/aodai_mobile/next_img.png) no-repeat !important;
+	margin-top: -16px !important;
+	right: 0 !important; 
+}
+
+.slide-arrows a.previous{
+	width: 19px !important;
+	height: 32px !important;
+	background: url(../images/aodai_mobile/prev_img.png) no-repeat !important;
+	margin-top: -16px !important;
+	left: 0 !important;
+}
+
+.w-100 {
+	width: 100%;
+	float: left;
+}
+
+@media (min-width: 450px) and (max-width: 1023px){
+	.list-right p{
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 1023px){
+.avartar {
+	/*width: 25% !important;
+	float: left;*/
+}
+
+.profile-detail {
+	width: 100% !important;
+}
+
+}
+
+@media screen and (min-width: 1024px){
+.profile-item {
+    float: left;
+}
+
+.avartar {
+	width: 25% !important;
+	float: left;
+}
+.profile-detail {
+	width: 74% !important;
+	float: left;
+}
+
+.detail-pro {
+    float: left;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 1000px){
+.nav-res {
+    max-height: 642px !important;
+}
+
+}
