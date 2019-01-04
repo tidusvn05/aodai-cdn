@@ -111,10 +111,10 @@
     /* three-feature-appartment-home */
     .three-feature-appartment-home{display: none;}
     .three-feature-appartment{margin-bottom: 1.2em;}
-    .info-feature-appartment{padding: 5px 10px;}
+    #info-feature-appartment{padding: 5px 10px;}
     .icon-navsprites-home-icon2{transform: scale(0.8); transform-origin: 5px 21px;}
     .icon-navsprites-building{transform: scale(0.8); transform-origin: 5px 21px;}
-    .info-feature-appartment{height: 53px;}
+    #info-feature-appartment{height: 53px;}
     .feature-appartment p{font-size: 1em; padding-left: 45px;padding-top: 4px;}
 
     /* introduce-district-wrapper */
@@ -461,7 +461,7 @@
     .feature-appartment p{font-size: 0.85em;}
     .redirect-appartment p{font-size: 1em;}
     .introduce-district-box p{font-size: 1.3em;}
-    .info-feature-appartment{height: 45px;}
+    #info-feature-appartment{height: 45px;}
     .feature-appartment p{padding-left: 38px;padding-top: 4px;}
     .icon-navsprites-home-icon2{transform: scale(0.65);transform-origin: 5px 11px;}
     .icon-navsprites-building{transform: scale(0.65);transform-origin: 5px 11px;}
@@ -491,10 +491,10 @@
     .redirect-appartment p a{line-height: 17px;}
 
     /* three-feature-appartment-home */
-    .info-feature-appartment{padding: 0px 5px;}
+    #info-feature-appartment{padding: 0px 5px;}
     .icon-navsprites-home-icon2{transform: scale(0.65); transform-origin: 13px 23px;}
     .icon-navsprites-building{transform: scale(0.65); transform-origin: 13px 23px;}
-    .info-feature-appartment{height: 45px;}
+    #info-feature-appartment{height: 45px;}
     .feature-appartment p{font-size: 0.85em; padding-left: 40px;padding-top: 9px;}
 
     /* introduce-district-wrapper */
@@ -660,7 +660,7 @@
     /* three-feature-appartment-home */
     .icon-navsprites-home-icon2{transform: scale(0.5); transform-origin: 13px 21px;}
     .icon-navsprites-building{transform: scale(0.5); transform-origin: 13px 21px;}
-    .info-feature-appartment{height: 42px;}
+    #info-feature-appartment{height: 42px;}
     .feature-appartment p{font-size: 0.8em;padding-left: 35px;}
 
     /* introduce-district-wrapper */
@@ -733,7 +733,7 @@
     /* three-feature-appartment-home */
     .icon-navsprites-home-icon2{transform: scale(0.45); transform-origin: 5px 19px;}
     .icon-navsprites-building{transform: scale(0.45); transform-origin: 5px 19px;}
-    .info-feature-appartment{height: 40px;}
+    #info-feature-appartment{height: 40px;}
     .feature-appartment p{font-size: 0.75em;padding-left: 27px;padding-top: 8px;}
 
     /* introduce-district-wrapper */
@@ -800,7 +800,7 @@
 }
 @media screen and (min-width: 569px) and (max-width: 666px){
     .feature-appartment p{font-size: 0.62em;}
-    .info-feature-appartment{height: 35px;}
+    #info-feature-appartment{height: 35px;}
     .icon-navsprites-home-icon2{transform: scale(0.4);transform-origin: 5px 15px;}
     .icon-navsprites-building{transform: scale(0.4);transform-origin: 5px 15px;}
     .introduce-district-info{height: 35px;}
@@ -909,7 +909,7 @@
     /* three-feature-appartment-home */
     .icon-navsprites-home-icon2{transform: scale(0.35); transform-origin: 5px 11px;}
     .icon-navsprites-building{transform: scale(0.35); transform-origin: 5px 11px;}
-    .info-feature-appartment{height: 30px;}
+    #info-feature-appartment{height: 30px;}
     .feature-appartment p{font-size: 0.62em;padding-left: 23px;padding-top: 5px;}
 
     /* introduce-district-wrapper */
@@ -987,7 +987,7 @@
     .info-redirect-appartment{height: 60px;}
     .redirect-appartment p{font-size: 1.3em;height: 50px;}
     .redirect-appartment p a{line-height: 25px;}
-    .info-feature-appartment{height: 60px;}
+    #info-feature-appartment{height: 60px;}
     .icon-navsprites-home-icon2{transform-origin: 5px 36px;}
     .feature-appartment p{padding-top: 5px;}
     .icon-navsprites-building{transform-origin: 5px 40px;}
@@ -1073,7 +1073,7 @@
 
     /* three-redirect-appartment-home */
     .feature-appartment:nth-child(2){margin-left: 0; margin-right: 0;}
-    .info-feature-appartment{padding: 5px 10px;}
+    #info-feature-appartment{padding: 5px 10px;}
     .introduce-district-info{padding: 5px 10px;}
     .icon-navsprites-home-icon2{transform: scale(0.8);}
     .icon-navsprites-building{transform: scale(0.8);}
@@ -1303,7 +1303,7 @@
     .map-content #drawing svg{transform: scale(0.45); left:-337px; top: 40px; width: 980px;}
     .icon-navsprites-home-icon2{transform: scale(0.8); transform-origin: 10px 29px;}
     .icon-navsprites-building{transform: scale(0.8); transform-origin: 10px 29px;}
-    .info-feature-appartment{height: 56px;}
+    #info-feature-appartment{height: 56px;}
     .introduce-district-info{height: 56px;}
     .feature-appartment p{font-size: 1.2em;padding-left: 45px;}
     .introduce-district-box p{font-size: 1.5em; padding-left: 45px;}
@@ -1326,7 +1326,7 @@
     .redirect-appartment p a{line-height: 20px;}
     .banner-content .text-one{font-size: 1.5em;}
     .banner-content .text-two{font-size: 1.5em;}
-    .info-feature-appartment{height:56px;}
+    #info-feature-appartment{height:56px;}
     .feature-appartment p{padding-top: 5px;}
     .introduce-district-info{height: 53px;}
 }
@@ -1339,7 +1339,7 @@
     .icon-navsprites-building{transform: scale(0.8); transform-origin: 15px 20px;}
     .feature-appartment p{font-size: 1.2em; padding-left: 45px;padding-top: 2px;}
     .introduce-district-box p{font-size: 1.5em; padding-left: 45px;}
-    .info-feature-appartment{height: 53px;}
+    #info-feature-appartment{height: 53px;}
     .introduce-district-info{height: 53px;}
     .common-repair{left: -11%; font-size: 13px!important;}
     .website-information .des-info-item h4{line-height: 24px;}
@@ -1349,7 +1349,7 @@
     .info-one-detail .favorite-social{width: 32%;}
     .btn-search a:before{right: 33%;}
     .info-redirect-appartment{height: 55px;}
-    .redirect-appartment p{font-size: 1.3em;height: 47px;}
+    .redirect-appartment p{font-size: 1.2em;height: 47px;}
     .redirect-appartment p a{line-height: 23px;}
 
 }
@@ -1404,7 +1404,7 @@
     .map-content #drawing svg{transform: scale(0.38); left:-380px; top: 40px; width: 980px;}
     .icon-navsprites-home-icon2{transform: scale(0.6); transform-origin: 10px 14px;}
     .icon-navsprites-building{transform: scale(0.6); transform-origin: 10px 14px;}
-    .info-feature-appartment{height: 45px;}
+    #info-feature-appartment{height: 45px;}
     .feature-appartment p{font-size: 1em;padding-left: 40px;}
     .price_area .local{margin: 11px 10px 20px 10px;}
     .common-repair{left: -11%; position: absolute;font-size: 12px!important;}
