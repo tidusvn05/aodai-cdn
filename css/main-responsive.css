@@ -410,6 +410,7 @@
     .btn-houses:hover:before{top: 39%;}
 
     /* Select search */
+    .search-box-offices .select2-container{width:50%!important;}
     .select2-container{width:50%!important;}
     .select2-container--default .select2-selection--single{border: 1px solid silver;}
     .select2-container--default:nth-of-type(n+2) .select2-selection--single{border-left: 1px solid #aaa;}
