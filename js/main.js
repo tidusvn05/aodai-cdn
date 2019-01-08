@@ -681,95 +681,9 @@ AODAI.prototype.wowAnimate = function() {
     if (classRedirect) wowActive(apartmentRedirect, 'three-redirect-appartment-banner');
 }
 AODAI.prototype.lazyLoad = function(){
-    var lazyloadImages = document.querySelectorAll("img.lazy");
-    var lazyloadThrottleTimeout;
-    function lazyload(){
-        if(lazyloadThrottleTimeout){
-            clearTimeout(lazyloadThrottleTimeout);
-        }
-        lazyloadThrottleTimeout = setTimeout(function(){
-            var scrollTop = window.pageYOffset;
-            lazyloadImages.forEach(function(img){
-                if(img.offsetTop < (window.innerHeight + scrollTop)){
-                    img.src = img.dataset.src;
-                    img.classList.remove('lazy');
-                }
-            });
-            if(lazyloadImages.length == 0){
-                document.removeEventListener("scroll", lazyload);
-                window.removeEventListener("resize", lazyload);
-                window.removeEventListener("orientationChange", lazyload);
-            }
-        }, 20);
-    }
-    document.addEventListener("scroll", lazyload);
-    window.addEventListener("resize", lazyload);
-    window.addEventListener("orientationChange", lazyload);
+    $('img.lazyload').lazyload();
 }
-AODAI.prototype.lazyloadBackground = function(){
-    var lazyloadImages;
-    if ("IntersectionObserver" in window) {
-        lazyloadImages = document.querySelectorAll(".lazy");
-        var imageObserver = new IntersectionObserver(function(entries, observer) {
-            entries.forEach(function(entry) {
-                if (entry.isIntersecting) {
-                    var image = entry.target;
-                    image.classList.remove("lazy");
-                    imageObserver.unobserve(image);
-                }
-            });
-        });
-        lazyloadImages.forEach(function(image) {
-            imageObserver.observe(image);
-        });
-    } else {  
-        var lazyloadThrottleTimeout;
-        lazyloadImages = document.querySelectorAll(".lazy");
-        function lazyload () {
-            if(lazyloadThrottleTimeout) {
-            clearTimeout(lazyloadThrottleTimeout);
-        }    
 
-        lazyloadThrottleTimeout = setTimeout(function() {
-            var scrollTop = window.pageYOffset;
-            lazyloadImages.forEach(function(img) {
-                if(img.offsetTop < (window.innerHeight + scrollTop)) {
-                img.src = img.dataset.src;
-                img.classList.remove('lazy');
-                }
-            });
-            if(lazyloadImages.length == 0) { 
-                document.removeEventListener("scroll", lazyload);
-                window.removeEventListener("resize", lazyload);
-                window.removeEventListener("orientationChange", lazyload);
-            }
-        }, 20);
-    }
-    document.addEventListener("scroll", lazyload);
-    window.addEventListener("resize", lazyload);
-    window.addEventListener("orientationChange", lazyload);
-  }
-}
-AODAI.prototype.lazybxSlider = function() {
-    $('.image-list').each(function(index){
-        if($('.image-list').eq(index).children('img')){
-            $('.image-list').eq(index).children('img').removeClass('lazy');
-            if($('.image-list').eq(index).children('img').attr('data-src')){
-                $('.image-list').eq(index).children('img').attr('src',$('.image-list').eq(index).children('img').attr('data-src'));
-            }
-        }
-    }); 
-}
-AODAI.prototype.lazybanner = function() {
-    $('.block-banner').each(function(index){
-        if($('.block-banner').eq(index).children('img')){
-            $('.block-banner').eq(index).children('img').removeClass('lazy');
-            if($('.block-banner').eq(index).children('img').attr('data-src')){
-                $('.block-banner').eq(index).children('img').attr('src',$('.block-banner').eq(index).children('img').attr('data-src'));
-            }
-        }
-    }); 
-}
 AODAI.prototype.init = function() {
     this.typeSearchActive();
     var checksliderTop = $('.slider-top-menu');
@@ -799,9 +713,6 @@ AODAI.prototype.init = function() {
     this.scrollbar();
     this.popupEmail();
     this.lazyLoad();
-    this.lazyloadBackground();
-    this.lazybxSlider();
-    this.lazybanner();
 }
 $(document).ready(function() {
     var aodai = new AODAI();

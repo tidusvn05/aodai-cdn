@@ -303,7 +303,6 @@ input[type=text]:focus {outline: 0;// -webkit-box-shadow: none;// box-shadow: no
 .feature-appartment_new p {font-size: 15px;display: table-cell;vertical-align: middle;padding-left: 55px;}
 .feature-appartment p a {color: #FFF;width: auto;}
 .feature-appartment p a:hover {// text-decoration: underline;border-bottom: 1px solid #FFF;}
-#support-lazy.lazy{background-image: none;background-color: #F1F1FA;}
 #support-lazy{background-image: url(../images/banner-support.jpg);background-size: 100% 100%;position: relative;}
 .support-block .heading-title {margin-top: 52px;padding-bottom: 37px;position: relative;font-size: 34px;font-family: Meiryo;text-align: center;}
 .support-block .heading-title:before {content: ' ';position: absolute;left: calc(50% - 28px);bottom: 0;width: 52px;height: 6px;background-color: #84292e;}
@@ -919,10 +918,6 @@ p .span-number {font-size: 47px;color: #771217;}
 .icon-navsprites-previus-icon-hover {background-position: -76px -364px;width: 14px;height: 24px;}
 .icon-navsprites-previus-icon {background-position: -76px -391px;width: 14px;height: 24px;}
 .icon-navsprites-previus-paging-icon {background-position: -61px -782px;width: 14px;height: 20px;}
-#icon-navsprites-q-and-a.lazy{background-image: none;background-color: #F1F1FA;}
-#icon-navsprites-q-and-a {background-image: url(../images/icon/q-and-a.png);background-position: center;background-repeat: no-repeat;height: 63px;}
-#icon-navsprites-question-new.lazy{background-image: none;background-color: #F1F1FA;}
-#icon-navsprites-question-new {background-image: url(../images/icon/question-new.png);background-position: center;background-repeat: no-repeat;height: 63px;}
 .wp-3 {width: 28%;}
 .wp-7 {width: 72%;}
 .vaT {vertical-align: top!important;}

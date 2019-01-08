@@ -629,94 +629,7 @@ AODAI.prototype.popupEmail = function() {
     $('#contactModal').on('hidden.bs.modal', function() { $(this).find(errorClass).remove(); });
 }
 AODAI.prototype.lazyLoad = function(){
-    var lazyloadImages = document.querySelectorAll("img.lazy");
-    var lazyloadThrottleTimeout;
-    function lazyload(){
-        if(lazyloadThrottleTimeout){
-            clearTimeout(lazyloadThrottleTimeout);
-        }
-        lazyloadThrottleTimeout = setTimeout(function(){
-            var scrollTop = window.pageYOffset;
-            lazyloadImages.forEach(function(img){
-                if(img.offsetTop < (window.innerHeight + scrollTop)){
-                    img.src = img.dataset.src;
-                    img.classList.remove('lazy');
-                }
-            });
-            if(lazyloadImages.length == 0){
-                document.removeEventListener("scroll", lazyload);
-                window.removeEventListener("resize", lazyload);
-                window.removeEventListener("orientationChange", lazyload);
-            }
-        }, 20);
-    }
-    document.addEventListener("scroll", lazyload);
-    window.addEventListener("resize", lazyload);
-    window.addEventListener("orientationChange", lazyload);
-}
-AODAI.prototype.lazyloadBackground = function(){
-    var lazyloadImages;
-    if ("IntersectionObserver" in window) {
-        lazyloadImages = document.querySelectorAll(".lazy");
-        var imageObserver = new IntersectionObserver(function(entries, observer) {
-            entries.forEach(function(entry) {
-                if (entry.isIntersecting) {
-                    var image = entry.target;
-                    image.classList.remove("lazy");
-                    imageObserver.unobserve(image);
-                }
-            });
-        });
-        lazyloadImages.forEach(function(image) {
-            imageObserver.observe(image);
-        });
-    } else {  
-        var lazyloadThrottleTimeout;
-        lazyloadImages = document.querySelectorAll(".lazy");
-        function lazyload () {
-            if(lazyloadThrottleTimeout) {
-            clearTimeout(lazyloadThrottleTimeout);
-        }    
-
-        lazyloadThrottleTimeout = setTimeout(function() {
-            var scrollTop = window.pageYOffset;
-            lazyloadImages.forEach(function(img) {
-                if(img.offsetTop < (window.innerHeight + scrollTop)) {
-                img.src = img.dataset.src;
-                img.classList.remove('lazy');
-                }
-            });
-            if(lazyloadImages.length == 0) { 
-                document.removeEventListener("scroll", lazyload);
-                window.removeEventListener("resize", lazyload);
-                window.removeEventListener("orientationChange", lazyload);
-            }
-        }, 20);
-    }
-    document.addEventListener("scroll", lazyload);
-    window.addEventListener("resize", lazyload);
-    window.addEventListener("orientationChange", lazyload);
-  }
-}
-AODAI.prototype.lazybxSlider = function() {
-    $('.image-list').each(function(index){
-        if($('.image-list').eq(index).children('img')){
-            $('.image-list').eq(index).children('img').removeClass('lazy');
-            if($('.image-list').eq(index).children('img').attr('data-src')){
-                $('.image-list').eq(index).children('img').attr('src',$('.image-list').eq(index).children('img').attr('data-src'));
-            }
-        }
-    }); 
-}
-AODAI.prototype.lazybanner = function() {
-    $('.block-banner').each(function(index){
-        if($('.block-banner').eq(index).children('img')){
-            $('.block-banner').eq(index).children('img').removeClass('lazy');
-            if($('.block-banner').eq(index).children('img').attr('data-src')){
-                $('.block-banner').eq(index).children('img').attr('src',$('.block-banner').eq(index).children('img').attr('data-src'));
-            }
-        }
-    }); 
+    $('img.lazyload').lazyload();
 }
 AODAI.prototype.init = function() {
     this.typeSearchActive();
@@ -746,9 +659,9 @@ AODAI.prototype.init = function() {
     this.scrollbar();
     this.popupEmail();
     this.lazyLoad();
-    this.lazyloadBackground();
-    this.lazybxSlider();
-    this.lazybanner();
+    // this.lazyloadBackground();
+    // this.lazybxSlider();
+    // this.lazybanner();
 
 }
 $(document).ready(function() {
@@ -819,14 +732,14 @@ function resize_change(is_first, e) {
     }
     if ($width <= 1024) {
         $(window).resize(function() {
-            var container_width = $('#pageContainer').width();
-            var container_height = $('#info-website-block').height();
+            var container_width = Math.ceil( $('#pageContainer').width() );
+            var container_height = Math.ceil( $('#info-website-block').height() );
             setTimeout( function () {
             $('#pageContainer').html('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Faodaihousing%2Fposts%2F184755988388923&tabs=timeline&width=' + container_width + '&height=' + container_height + '&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1022639317783949" width="' + container_width + '" height="' + container_height + '" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"><blockquote cite="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Faodaihousing%2Fposts%2F184755988388923&tabs=timeline&width=' + container_width + '&height=' + container_width + '&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1022639317783949" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Faodaihousing%2Fposts%2F184755988388923&tabs=timeline&width=' + container_width + '&height=' + container_width + '&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1022639317783949">Aodaihousing</a></blockquote></iframe>');
             }, 6000);
         });
     } else {
-        var container_height = $('#info-website-block').height();
+        var container_height = Math.ceil( $('#info-website-block').height() );
         setTimeout( function () {
         $('#pageContainer').html('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Faodaihousing%2Fposts%2F184755988388923&tabs=timeline&width=500&height=' + container_height + '&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1022639317783949" width="500" height="' + container_height + '" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"><blockquote cite="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Faodaihousing%2Fposts%2F184755988388923&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1022639317783949" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Faodaihousing%2Fposts%2F184755988388923&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1022639317783949">Aodaihousing</a></blockquote></iframe>');
         }, 6000);
