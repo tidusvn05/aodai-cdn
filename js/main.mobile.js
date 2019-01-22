@@ -442,8 +442,27 @@ AODAI.prototype.sliderPrimary = function() {
     $('.bx-next').remove();
 }
 AODAI.prototype.listSlider = function() {
-    $('.items-list-apartment').owlCarousel({ loop: true, margin: 15, responsiveClass: true, responsive: { 0: { items: 1, nav: true, loop: false }, 568: { items: 2, nav: true, loop: false }, 768: { items: 2, nav: true, loop: false }, 992: { items: 4, nav: true, loop: false } } });
-    $('.three-feature-appartment .container .row').owlCarousel({ items: 3, nav: true });
+    $('.items-list-apartment').owlCarousel({ 
+        loop: true, 
+        margin: 15, 
+        responsiveClass: true, 
+        responsive: { 
+            0: { items: 1, nav: true, loop: false }, 
+            568: { items: 2, nav: true, loop: false }, 
+            768: { items: 2, nav: true, loop: false }, 
+            992: { items: 4, nav: true, loop: false } 
+        } 
+    });
+    $('.three-feature-appartment .container .row').owlCarousel({ 
+        loop: true,
+        margin: 15,
+        responsiveClass: true,
+        responsive: {
+            0: { items: 1, nav: true, loop: false }, 
+            568: { items: 2, nav: true, loop: false }, 
+            992: { items: 3, nav: true, loop: false }
+        }
+    });
 }
 AODAI.prototype.staffList = function() { $('.staff-list').owlCarousel({ loop: true, responsiveClass: true, responsive: { 0: { items: 1, nav: true }, 320: { items: 1, nav: true }, 375: { items: 1, nav: true }, 568: { margin: 10, items: 1, nav: true }, 640: { autoWidth: true, items: 1, nav: true }, 667: { autoWidth: true, items: 1, nav: true }, 768: { items: 1, nav: true }, 812: { autoWidth: true, margin: 30, items: 1, nav: true }, 992: { items: 2, nav: true }, 1024: { margin: 10, items: 2, nav: true, loop: false }, 1200: { margin: 10, items: 2, nav: true, loop: false } } }); }
 AODAI.prototype.slideDetailProduct = function() { $('#imageGallery').lightSlider({ gallery: true, item: 1, responsive: [{ breakpoint: 1024, settings: { item: 1, thumbItem: 10, slideWidth: 674, slideMargin: 0, enableDrag: false, currentPagerPosition: 'right', animateThumb: true, thumbnail: true, loop: false }, breakpoint: 736, settings: { item: 1, gallery: false, pager: false, loop: false } }] }); }
@@ -763,6 +782,8 @@ function focusFormContact() {
         if ($(e.target).is('#contactModal')) { document.activeElement.blur(); } $('.block-contact-mail a').click(function() { $("html, body").animate({ scrollTop: 0 }, 0); });
         $('.info-three-detail a').click(function() { $("html, body").animate({ scrollTop: 0 }, 0); });
         $('.contact-us-block a').click(function() { $("html, body").animate({ scrollTop: 0 }, 0); });
+        $('.btn-eco a').click(function() { $("html, body").animate({ scrollTop: 0 }, 0); });
+        $('.popUp').click(function() { $("html, body").animate({ scrollTop: 0 }, 0); });
     });
 }
 focusFormContact();
@@ -781,3 +802,16 @@ onresize();
 if ('ontouchstart' in window) {
     window.onscroll = onresize;
 }
+
+$(document).ready(function(){
+    $('.fadeOut').owlCarousel({
+        items: 1,
+        animateOut: 'fadeOut',
+        lazyLoad:true,
+        loop: true,
+        margin: 10,
+        autoplay:true,
+        nav: false,
+        dots: false
+    });
+});

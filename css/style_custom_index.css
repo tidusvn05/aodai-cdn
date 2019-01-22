@@ -34,18 +34,19 @@ body,html{min-width:1200px;font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kak
 .menu-header .top-menu{padding:25px 0;position:absolute;top:0;min-width:100%;background-color:rgba(255,255,255,.8);z-index:100}
 .block-contact-mail,.block-contact-phone{border:1px dotted #cdcdce;background-color:rgba(255,255,255,.5);position:relative}
 .container{position:relative;width:1200px;margin:0 auto}
-.menu-header .container>div{display:inline-block;vertical-align:middle}
-.menu-header .top-menu .block-logo{margin-top:-6px;margin-left:15px;margin-right:87px}
+.menu-header .container>div{vertical-align:middle}
+.menu-header .top-menu .block-logo{margin-left:30px;}
+.top-menu .padding{padding: 0px;}
+.top-menu .block-contact-phone-jp{width: 90%;margin: 0 2.5% 0 7.5%;}
 .block-logo p{margin-bottom:3px;font-size:14px;line-height:22px}
-.block-contact-phone{margin-right:20px}
 .block-contact-phone p{font-size:14px;text-align:center;padding:11px 16px 7px 50px}
 .block-contact-phone p:first-child{margin:0}
 .block-contact-phone.block-contact-phone-jp p{background-position:44px;padding:11px 12px 7px 50px}
 .block-contact-phone p:last-child{padding:11px 0;margin:0}
 // .block-contact-phone p:last-child a{// text-decoration:none;// color:inherit}
 .block-contact-phone span{display:block;width:80%;border-bottom:1px dotted #cdcdce;margin:0 auto}
-.block-contact-mail{margin-right:50px}
-.block-contact-mail p{margin:0;padding:19px 40px 16px 96px}
+.block-contact-mail{width: 83%;margin-left: 5%;}
+.block-contact-mail p{margin: 0;padding: 17px 40px 16px 96px;}
 .block-contact-mail a{margin:0;display:inline-block;font-size:17px;font-weight:700}
 .block-contact-mail a:hover{background-color:#F9A01B;color:#FFF}
 .block-contact-mail:hover{border-color:transparent}
@@ -133,8 +134,10 @@ input[type=text]:focus{outline:0;// -webkit-box-shadow:none;// box-shadow:none}
 .btn-search{background-color:#84292e;width:300px;height:50px;text-align:center;margin:0 auto;position:relative}
 .btn-search a{font-size:25px;line-height:50px;width:100%;height:100%;text-align:center}
 .btn-view-more{background-color:#771217;font-size:20px;border:1px solid #FFF}
+.btn-view-more:hover {background-color: #FFF;color: #84292e!important;}
+.btn-view-staff .btn-view-more:active, .btn-view-staff .btn-view-more:hover{border: 1px solid #771217;}
 .arrival-title .button-arrival{margin:85px 0 0 4px;position:relative}
-.sub-menu-list-header{display:none;margin-bottom:0;width:400px;margin-top:26px;background-color:#FFF;position:absolute;right:0;z-index:120}
+.sub-menu-list-header{display: none;margin-bottom: 0;width: 400px;margin-top: 26px;background-color: #FFF;position: absolute;right: 0;z-index: 120;top: 85px;}
 .sub-menu-list-header>li{position:relative;padding:13px 0 13px 30px;border-top:1px solid #f1e7e7;border-bottom:1px solid #f1e7e7;z-index:99999!important}
 .sub-menu-list-header>li:first-child{border-top-color:transparent}
 .sub-menu-list-header li a{width:100%;height:100%;display:inline-block;color:inherit;font-size:16px;outline:0!important}
@@ -356,7 +359,7 @@ input[type=text]:focus{outline:0;// -webkit-box-shadow:none;// box-shadow:none}
 .btn-view-more{padding:10px 57px 9px 18px}
 .benefit-block .col-info-benefit .img-benefit:before{content:'';position:absolute;top:0;right:0;bottom:49%;left:0;border:1px solid #ddd;border-bottom:0}
 .btn-search a:before,.btn-view-more:before,.btn-view-more:hover:before,.dropdown-selected span:nth-child(2):before,.spritebox-up-email:before,.spritecontrols:before,.spritelocation-footer:before,.spritemail-footer:before,.spritemail2:before,.spritephone-footer:before,.spritephone:before{max-width:100%;background-image:url(../images/icon/img-sprites.png)}
-.spritemail2:before{position:absolute;content:'';background-position:0 143%;width:45px;height:43px;left:33px;top:20px}
+.spritemail2:before{position: absolute; content: ''; background-position: 0 143%; width: 45px; height: 43px; left: 33px; top: 17px;}
 .spritemail2:hover:before{background-image:url(../images/icon/mail3.png);background-repeat:no-repeat}
 .btn-view-more:before{position:absolute;content:'';background-position:0 53%;width:25px;height:19px;right:16px;top:14px}
 .btn-search a:before{position:absolute;content:'';background-position:0 68%;width:25px;height:25px;right:88px;top:12px}

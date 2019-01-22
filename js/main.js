@@ -441,7 +441,16 @@ AODAI.prototype.sliderPrimary = function() {
 }
 AODAI.prototype.listSlider = function() {
     $('.items-list-apartment').owlCarousel({ loop: true, margin: 15, responsiveClass: true, responsive: { 0: { items: 1, nav: true, loop: false }, 568: { items: 2, nav: true, loop: false }, 768: { items: 2, nav: true, loop: false }, 992: { items: 4, nav: true, loop: false } } });
-    $('.three-feature-appartment .container .row').owlCarousel({ items: 3, nav: true });
+    $('.three-feature-appartment .container .row').owlCarousel({ 
+        loop: true,
+        margin: 15,
+        responsiveClass: true,
+        responsive: {
+            0: { items: 1, nav: true, loop: false }, 
+            568: { items: 2, nav: true, loop: false }, 
+            992: { items: 3, nav: true, loop: false }
+        }
+    });
 }
 AODAI.prototype.staffList = function() { $('.staff-list').owlCarousel({ loop: true, responsiveClass: true, responsive: { 0: { items: 1, nav: true }, 320: { items: 1, nav: true }, 375: { items: 1, nav: true }, 568: { margin: 10, items: 1, nav: true }, 640: { autoWidth: true, items: 1, nav: true }, 667: { autoWidth: true, items: 1, nav: true }, 768: { items: 1, nav: true }, 812: { autoWidth: true, margin: 30, items: 1, nav: true }, 992: { items: 2, nav: true }, 1024: { margin: 10, items: 2, nav: true, loop: false }, 1200: { margin: 10, items: 2, nav: true, loop: false } } }); }
 AODAI.prototype.slideDetailProduct = function() { $('#imageGallery').lightSlider({ gallery: true, item: 1, responsive: [{ breakpoint: 1024, settings: { item: 1, thumbItem: 10, slideWidth: 674, slideMargin: 0, enableDrag: false, currentPagerPosition: 'right', animateThumb: true, thumbnail: true, loop: false }, breakpoint: 736, settings: { item: 1, gallery: false, pager: false, loop: false } }] }); }
@@ -782,14 +791,17 @@ function resize_change(is_first, e) {
     }
     if ($width <= 1024) {
         $(window).resize(function() {
-            var container_width = $('#pageContainer').width();
-            var container_height = $('#info-website-block').height();
+            // var container_width = $('#pageContainer').width();
+            // var container_height = $('#info-website-block').height();
+            var container_width = Math.ceil( $('#pageContainer').width() );
+            var container_height = Math.ceil( $('#info-website-block').height() );
         	setTimeout( function () {
             $('#pageContainer').html('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Faodaihousing%2Fposts%2F184755988388923&tabs=timeline&width=' + container_width + '&height=' + container_height + '&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1022639317783949" width="' + container_width + '" height="' + container_height + '" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"><blockquote cite="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Faodaihousing%2Fposts%2F184755988388923&tabs=timeline&width=' + container_width + '&height=' + container_width + '&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1022639317783949" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Faodaihousing%2Fposts%2F184755988388923&tabs=timeline&width=' + container_width + '&height=' + container_width + '&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1022639317783949">Aodaihousing</a></blockquote></iframe>');
             }, 6000);
         });
     } else {
-        var container_height = $('#info-website-block').height();
+        // var container_height = $('#info-website-block').height();
+        var container_height = Math.ceil( $('#info-website-block').height() );
         setTimeout( function () {
         $('#pageContainer').html('<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Faodaihousing%2Fposts%2F184755988388923&tabs=timeline&width=500&height=' + container_height + '&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1022639317783949" width="500" height="' + container_height + '" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"><blockquote cite="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Faodaihousing%2Fposts%2F184755988388923&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1022639317783949" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Faodaihousing%2Fposts%2F184755988388923&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1022639317783949">Aodaihousing</a></blockquote></iframe>');
     	}, 6000);
@@ -813,6 +825,8 @@ function focusFormContact() {
         if ($(e.target).is('#contactModal')) { document.activeElement.blur(); } $('.block-contact-mail a').click(function() { $("html, body").animate({ scrollTop: 0 }, 0); });
         $('.info-three-detail a').click(function() { $("html, body").animate({ scrollTop: 0 }, 0); });
         $('.contact-us-block a').click(function() { $("html, body").animate({ scrollTop: 0 }, 0); });
+        $('.btn-eco a').click(function() { $("html, body").animate({ scrollTop: 0 }, 0); });
+        $('.popUp').click(function() { $("html, body").animate({ scrollTop: 0 }, 0); });
     });
 }
 focusFormContact();
@@ -831,3 +845,15 @@ onresize();
 if ('ontouchstart' in window) {
     window.onscroll = onresize;
 }
+
+$(document).ready(function(){
+    $('.fadeOut').owlCarousel({
+        items: 1,
+        animateOut: 'fadeOut',
+        loop: true,
+        margin: 10,
+        autoplay:true,
+        nav: false,
+        dots: false
+    });
+});

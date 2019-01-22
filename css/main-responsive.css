@@ -14,28 +14,22 @@
 
     body {min-width: 100%!important;}
     .menu-header{height: 100%;}
-    .menu-header .top-menu{padding: 0.5em 0em 0.5em; position: fixed;}
+    .menu-header .top-menu{padding: 0.5em 15px 0.5em; position: fixed;}
     header .toggle-search{position: absolute!important;}
     .container{width: 100%;}
-    .menu-header .top-menu .block-logo{margin-top: 0.5em; margin-left:0; margin-right: 0; width: 140px;}
+    .menu-header .top-menu .block-logo{margin-left:0;margin-top:10px;}
     .block-logo p{margin-bottom: 0em; font-size: 0.8em; line-height: 1.4em;}
     .block-logo img{width: 100%;}
-    .menu-header .top-menu .block-contact-phone{display: none!important; margin-right: 0; float: right; right: 11.5em;}
-    .block-contact-phone p{font-size: 0.7em;}
-    .menu-header .top-menu .block-contact-phone.block-contact-phone-common{display: inline-block!important; margin-top: 0.6em;}
-    .menu-header .top-menu .block-contact-phone.block-contact-phone-layout{display: inline-block!important;}
-    .block-contact-phone.block-contact-phone-common p{padding: 0.6em 1em 0.3em 1em;}
-    /* .menu-header .top-menu .block-contact-phone.block-contact-phone-jp{display: inline-block!important; margin-top: 0.6em;}
-    .block-contact-phone.block-contact-phone-jp p{background-position: 2.3em 0.7em; padding: 0.6em 1em 0.3em 1em;} */
-    .block-contact-phone p:first-child{padding: 0.6em 1em 0.3em 2.2em;}
-    .block-contact-mail{position: absolute; margin-top: 0.6em; margin-bottom: 0em; margin-right: 0px; right: 55px;}
-    .block-contact-mail a{font-size: 0.7em; background-size: 1.8em 1.5em; background-position: 1em;}
-    .block-contact-mail p{padding: 1em 1em 0.9em 3.5em;}
-    .menu-header .top-menu .block-menu-language{position: absolute; right: 15px; margin-left: 0px; z-index: 999;}
-    .btn-menu{margin-top: 14px; width: 33px; }
-    .btn-menu a{padding: 0.3em 0 0.2em 0;display:table;}
-    .btn-close-menu a{font-size: 1.4em; padding: 0.1em 0;}
-    .sub-menu-list-header{width: 50%; margin-top: 0px; overflow: scroll; height: 535px;}
+    .block-hidden{display: none!important;}
+    .top-menu .block-contact-phone.block-contact-phone-common{width: 85%;margin: 0 7.5%;display: block;}
+    .top-menu .block-contact-phone.block-contact-phone-layout{width: 85%; margin-left: 15%;}
+    .block-contact-mail{width: 85%;margin:0;}
+    .block-contact-mail a{font-size: 1.3em;}
+    .block-contact-mail p{padding: 1em 1.9em 0.9em 5.5em;}
+    .btn-menu{width: 40px;margin-top: 20px;}
+    .btn-menu a{padding: 0.5em 0 0.5em 0;display:table;}
+    .btn-close-menu a{font-size: 1.7em; padding: 0.2em 0;}
+    .sub-menu-list-header{width: 50%; margin-top: 0px; overflow: scroll; height: 450px;}
     .search-box .type-search-box{margin: 0; margin: 10px 0 0 0;}
     .sub-menu-list-header li a{font-size: 1em;}
     .sub-menu-list-header li a p{margin:0;}
@@ -44,7 +38,7 @@
     .image-list img{height: 290px;}
     .banner-content .text-one{font-size: 2.5em;}
     .banner-content .text-two{font-size: 2.5em;}
-    .sub-content-list.four-line{top: 30%;}
+    .sub-content-list.four-line{top: 32%;}
     .bx-wrapper{margin-bottom: 1em;}
     .line-clamp-search{background-color: transparent; white-space:nowrap; display: block;}
     
@@ -234,7 +228,8 @@
     #toggle-label:after{background-image: url('../images/icon/ico-right-arrow.png'); background-repeat: no-repeat; content: ''; position: absolute; display: block; top: 33%; right: 25px; width: 24px; height: 24px; webkit-transition: all .2s linear; transition: all .2s linear;}
     #toggle-label.active:after{-webkit-transform: rotate(90deg); transform: rotate(90deg); top: 33%;}
     a#toggle-label{color: inherit;}
-    main ul.collapse-item li{padding: 0 15px; margin-bottom: 15px;}
+    main ul.collapse-page li{padding: 0 15px;}
+    main ul.collapse-item li{margin-bottom: 15px;}
     main ul.collapse-item li a#toggle-label{border-radius: 5px; box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2); border: 1px solid #000;}
 
     /* Modal */
@@ -271,7 +266,7 @@
     /* list-particular-apartment */
     .product-features-right{float: none!important;}
     .product-features .product-features-right{width: 100%; height: auto;}
-    .content-search-block .product-features{margin-left: 0; padding: 0 15px;}
+    .content-search-block .product-features{margin-left: 0;}
     .product-features .product-features-left{width: 100%; margin-top: 1em;}
 
     .product-block{margin: 0; width: 100%;}
@@ -282,16 +277,15 @@
     .product-item .owl-carousel{width: 100%!important;}
     .product-item .overlay-fix:before{display: block!important;}
     .list-search-product-item > div{display: block;}
-    .detail-product-item .detail-product-left{float: none!important; margin-top: 20px!important; text-align: center; width: 100%;}
-    .list-search-product-item .detail-product-left .left-info-item{width: 100%; padding: 0; display: inline-flex;}
-    .bold-text{width: 40%; float: left; margin-bottom: 0!important; padding: 10px 15px; text-align: left; font-size: 16px;}
-    .common-text{width: 60%; float: left; line-height: normal; padding: 10px 20px; text-align: right; font-size: 16px;}
+    .detail-product-item .detail-product-left{float: none!important; margin-top: 20px!important; width: 100%;padding: 5px 10px;}
+    .list-search-product-item .detail-product-left .left-info-item{width: 100%; padding: 0; display: inline-block;}
     .common-fixed{width: 100%; float: none; padding: 0; text-align: left;}
     .common-repair{width: auto!important; padding: 10px 0;}
     .product-description{float: none!important; overflow: hidden;}
     .detail-product-right{float: none!important; width: 360px!important; margin: auto!important;}
-    .detail-product-item{margin-top: 0px; text-align: center;}
+    .detail-product-item{margin-top: 0px;}
     .detail-product-right .list-condition .list-condition-item{width: 480px!important;}
+    .product-block .bold-text{padding-right:15px;}
     .detail-product-right .list-utilities-item{width: 480px!important;}
     .product-description{display: none;}
     .product-features .product-features-left a{font-size: 2em;}
@@ -315,7 +309,7 @@
     .image-banner-block{margin-bottom: 40px;}
     .info-apartment .set-slider-list .row{padding-top: 30px;}
 
-    .menu-header.common-header{height: 45px;}
+    .menu-header.common-header{height: 89px;}
 
     /* Detail */
     /* lightSlider */
@@ -346,7 +340,6 @@
     .map-content #drawing svg{transform: scale(0.9); left:-105px; top: 145px; width: 980px;}
     .map-content .heading-product.heading-map{margin: 15px 0;}
     .info-appartment-item .des-info-appartment{max-width: max-content;}
-    .contact-detail{width: 100%; margin: 2em 0% 0; padding: 0.6em 0; font-size: 2em;}
     .feature-static-page .options-list li:nth-last-child(-n+3){margin-bottom: 20px;}
     .product-features .tab-area{width: auto;}
 
@@ -356,29 +349,17 @@
     .website-information .des-info-item h4{font-size: 1.7em;}
 
     /* header */
-    .menu-header .top-menu .block-contact-phone.block-contact-phone-common{margin-top: 0.2em;margin-right: 0.7em;}
-    .menu-header .top-menu .block-contact-phone{right: 12.5em;}
-    .block-contact-phone p{font-size: 0.85em;}
-    .block-contact-phone p:first-child{background-size: 1em 1em;}
-    .block-contact-phone.block-contact-phone-common p{background-position: 3.2em 0.9em;}
-    .block-contact-phone.block-contact-phone-layout p{background-position: 1em 0.9em;}
-    .block-contact-mail{margin-top: 0.2em; right: 56px;}
-    .btn-menu{margin-top: 12px;}
-    .menu-header .top-menu .block-logo{width: 150px;}
+    .block-contact-phone p{font-size: 1em;}
     .block-logo p{font-size: 0.8em;}
-    .block-contact-mail a{font-size: 0.85em;}
-    .btn-menu a .fa.fa-bars{font-size: 1.7em;vertical-align: middle;display:table-cell;}
-
+    .btn-menu a .fa.fa-bars{font-size: 2em;vertical-align: middle;display:table-cell;}
     .feature-appartment-tow{width: 100%; padding: 0;}
     .feature-appartment-tow img{width: 100%;}
 
     .fb_iframe_widget,.fb_iframe_widget span,.fb_iframe_widget span iframe[style] {min-width: 100% !important; width: 100% !important; position: absolute!important; height: 100%;}
 
     .map-content .des-and-image{border: 1px #c0c0c0 solid;}
-    .contact-us-block .content-tel{height: 60px; width: 100%;}
     .contact-us-block .content-tel-first{width: 49px;}
     /* .img-product-item .owl-item a{width: 100%;} */
-    .overlay-detail{width: 40%;}
 
     .des-and-image:before{content: " "; display: table;}
     .des-and-image:after{clear: both;}
@@ -397,14 +378,16 @@
     .linkBtn01 > li > a{min-width: 300px; padding: 15px;}
     .linkBtn01 > li > a > .icn01 > .txt01:before{background-size: 30px; margin-top: -8px;}
     .absolute{position: absolute!important;display: block;width: 100%;}
-    .block-contact-phone-layout .spritephone:before{width: 15px; height: 12px; left: 18px; top: 7px;}
-    .spritephone:before{width: 15px;height: 12px;left: 30px;top: 7px;}
-    .spritemail2:before{width: 38px;height: 17px;left: 10px;top: 15px;background-size: 100%;}
-    .spritemail2:hover:before{width: 18px;height:17px;}
+    .block-contact-phone-layout .spritephone:before{width: 18px; height: 14px; left: 65px; top: 10px;}
+    .spritephone:before{width: 18px;height: 14px;left:70px;top: 10px;}
+    .spritemail2:before{width: 49px;height: 31px;left: 35px;top: 20px;background-size: 140%;}
+    .spritemail2:hover:before{width: 49px;height:31px;background-size: 66%;}
     .btn-view-more:before{width: 22px;height: 10px;right: 0px;top: 33%;background-size: 230%;}
-    .btn-view-more:hover:before{width: 38px;height: 18px;right: 0px;top: 31%;background-size: 230%;}
+    .btn-view-more:hover:before{width: 22px;height: 18px;right: 0px;top: 17%;background-size: 230%;background-position: 0 60%;}
     .btn-visible:before{width: 38px;height:18px;right:0;top:31%;background-size: 230%;}
+    .btn-visible:hover:before{width: 36px;height:18px;right:0;top:29%;background-size: 230%;background-position: 0 60%;}
     .btn-fixed:before{width:26px;height: 11px;top: 46%;}
+    .btn-fixed:hover{}
     .btn-fixed:hover:before{width:27px;height: 16px;top: 39%;}
     .btn-houses:before{top: 45%;}
     .btn-houses:hover:before{top: 39%;}
@@ -417,6 +400,7 @@
     .select2-container--default:nth-of-type(2n+2) .select2-selection--single{border-left: none;}
     .dropdown-submit .select2-container--default:nth-of-type(1) .select2-selection--single{border-bottom: 1px solid #aaa;}
     .dropdown-submit .select2-container--default:nth-of-type(2) .select2-selection--single{border-bottom: 1px solid #aaa;border-left: 1px solid #aaa;}
+    .contact-us-block.block_center_contact{width: 100%; margin-top:10px;}
 }
 
 @media screen and (max-width: 992px){
@@ -473,12 +457,18 @@
 
 @media screen and (max-width: 812px){
     /* header */
-    .block-contact-phone p{font-size: 0.85em;}
+    .block-contact-phone p{padding:0.5em;}
+    .block-contact-phone p:last-child{padding: 0.7em;}
     .block-contact-phone p:first-child{background-size: 1em 1em; }
-    .btn-menu{margin-top: 12px;}
-    .menu-header .top-menu .block-logo{width: 150px;}
+    .block-contact-phone-layout .spritephone:before{left: 28px;top: 6px;}
+    .spritephone:before{left:33px;top:6px;}
     .block-logo p{font-size: 0.8em;}
-    .block-contact-mail a{font-size: 0.85em;}
+    .block-contact-mail a{font-size: 1em;}
+    .block-contact-mail p{padding: 1.3em 2.1em 1.2em 5.5em;}
+    .spritemail2:before{width:36px;height:23px;left:30px;}
+    .btn-menu{margin-top: 15px;}
+    .sub-menu-list-header{top: 73px;height: 280px;}
+    .spritemail2:hover:before{width: 49px;height: 22px;background-size: 47%;}
 
     .sub-introduce-staff{max-width: 90em;}
     .staff-list .owl-nav .owl-next{margin-right: 57px;}
@@ -520,7 +510,6 @@
     /* map-content */
     .map-content #drawing svg{transform: scale(0.9); left:-200px; top: 145px; width: 980px;}
     .map-content .des-and-image .map-image{width: 43%; }
-    .contact-detail{width: 100%; margin: 2em 0% 0; padding: 0.6em 0; font-size: 1.7em;}
     .map-content .type-map-des{width: 57%;}
 
     /* footer */
@@ -530,7 +519,6 @@
     .address-footer p:first-child{font-size: 0.9em; width: 39%; float: left;}
     .address-footer p:nth-child(2){width: 30%; float: left; font-size: 1em;}
     .address-footer p:last-child{width: 24%; float: left; font-size: 1em; margin-left: 5%;}
-    .overlay-detail{width: 40%;}
     .common-repair{left: -8%; position: absolute; top: -12px; font-size: 18px!important}
     .select-item-row-item3{margin-top: 50px!important;}
 
@@ -548,13 +536,20 @@
 
 @media screen and (max-width: 768px){
     /* header */
+    .menu-header .top-menu .block-logo{margin-top: 5px;}
+    .block-contact-phone-layout .spritephone:before{width: 16px;height:12px;}
+    .spritephone:before{width: 16px;height:12px;}
     .block-contact-phone p{font-size: 0.85em;}
     .block-contact-phone p:first-child{background-size: 0.9em 0.9em; }
     .block-contact-phone.block-contact-phone-layout p{background-position: 1em 0.9em;}
-    .btn-menu{margin-top: 12px;}
-    .menu-header .top-menu .block-logo{width: 150px;}
     .block-logo p{font-size: 0.8em;}
-    .block-contact-mail a{font-size: 0.85em;}
+    .block-contact-mail a{font-size: 0.9em;}
+    .block-contact-mail p{padding: 1.1em 2.3em 1em 6em;}
+    .spritemail2:before{width: 35px;height: 22px;left: 28px;top: 15px;}
+    .btn-menu a .fa.fa-bars{font-size:1.8em;}
+    .btn-menu{width: 36px;margin-top: 14px;}
+    .btn-menu a{padding: 0.4em 0 0.4em 0;}
+    .btn-close-menu a{padding: 0;}
 
     .sub-introduce-staff{max-width: 64.8em;}
     .staff-list{margin: 10px 0 40px 0;}
@@ -563,7 +558,7 @@
     .staff-list .owl-nav .owl-next{margin-right: 47px;}
     .staff-list .owl-nav .owl-prev{margin-left: 10px;}
     .arrival-title p{font-size: 2em;}
-    .sub-menu-list-header{height: auto;}
+    .sub-menu-list-header{top:62px;}
 
     /* introduction-staff-company */
     .operation-company{height: 489px;}
@@ -609,7 +604,6 @@
     .info-one-detail .price-appartment-detail p:last-child span:first-child{font-size: 1.7em; padding-left: 0;}
     .btn-zoom-in{display: none;}
     .lSSlideOuter .lSPager.lSGallery li{width: 109px!important; height: 65px!important; overflow: hidden; margin-right: 11px!important; position: relative; display: inline-block;}
-    .contact-detail{width: 100%; margin: 2em 0% 0; padding: 0.6em 0; font-size: 1.4em;}
 
     /* map-content */
     .map-content #drawing svg{transform: scale(0.9); left:-222px; top: 145px; width: 980px;}
@@ -623,7 +617,6 @@
     .option-item-footer span:first-child{width: 29%; float: left; margin-right: 6%; margin-left: 15%;}
     .option-item-footer span:last-child{width: 30%; float: left; margin-left: 6%; margin-right: 14%;}
     .address-footer{width: 80%; margin: 0 10%;}
-    .overlay-detail{width: 40%;}
 
     .wrap-img-product{width: 80%; height: 365px;}
     .product-detail-right{width: 80%;}
@@ -638,6 +631,10 @@
     .time-block{padding: 14.5px 0 0 20px;}
     .website-information .des-info-item .des-info-item-content{font-size: 1.6em; overflow: scroll; height: 145px;padding: 14px 20px 15px 20px;}
     .website-information .des-info-item h4{font-size: 1.6em;}
+    .passport-image{width:100%;}
+    /* Responsive page */
+    .eco-image{margin-bottom: 15px;}
+    .menu-header.common-header{height: 67px;}
 
 }
 
@@ -645,11 +642,9 @@
     /* header */
     .block-contact-phone p{font-size: 0.85em;}
     .block-contact-phone p:first-child{background-size: 0.9em 0.9em; }
-    .btn-menu{margin-top: 12px;}
-    .menu-header .top-menu .block-logo{width: 150px;}
     .block-logo p{font-size: 0.8em;}
-    .block-contact-mail a{font-size: 0.85em;}
     #contactModal .close{top: -11px; right: -11px;}
+    .block-contact-mail p{padding: 1.1em 1.7em 1em 5.8em;}
 
     /* introduction-staff-company */
     .sub-introduce-staff{max-width: 55.89em; padding-top: 20px;}
@@ -685,7 +680,6 @@
     /* map-content */
     .map-content #drawing svg{transform: scale(0.9); left:-238px; top: 145px; width: 980px;}
     .map-content .des-and-image .map-image{width: 40%;}
-    .contact-detail{width: 100%; font-size: 1.4em;  margin: 2em 0 0; padding: 0.6em 0;}
 
     /* footer */
     .option-item-footer span:first-child{width: 29%; float: left; margin-right: 6%; margin-left: 15%;}
@@ -694,7 +688,6 @@
     .address-footer p:first-child{font-size: 0.9em; width: 39%; float: left;}
     .address-footer p:nth-child(2){width: 30%; float: left; font-size: 1em;}
     .address-footer p:last-child{width: 24%; float: left; font-size: 1em; margin-left: 5%;}
-    .overlay-detail{width: 40%;}
     .common-repair{left: -8%; position: absolute; top: -12px; font-size: 18px!important}
     .select-item-row-item3{margin-top: 50px!important;}
 
@@ -711,15 +704,18 @@
 
 @media screen and (max-width: 667px){
     /* header */
-    .menu-header .top-menu .block-contact-phone{right: 12em;}
     .block-contact-phone p{font-size: 0.8em;}
     .block-contact-phone p:first-child{background-size: 1em 1em; }
     .block-contact-phone.block-contact-phone-common p{background-position: 3.2em 0.8em;}
     .block-contact-phone.block-contact-phone-layout p{background-position: 1em 0.8em;}
-    .btn-menu{margin-top: 12px;}
-    .menu-header .top-menu .block-logo{width: 140px;}
     .block-logo p{font-size: 0.75em;}
     .block-contact-mail a{font-size: 0.8em;}
+    .btn-menu{margin-top: 10px;width: 32px;}
+    .sub-menu-list-header{top:64px;}
+    .btn-menu a .fa.fa-bars{font-size: 1.6em;}
+    .btn-menu a{padding: 0.4em 0 0.4em 0;}
+    .btn-close-menu a{padding: 0.1em 0 0.1em 0;font-size:1.5em;}
+    .block-contact-mail p{padding: 1.3em 2.1em 1.2em 5.5em;}
 
     .sub-introduce-staff{padding: 0px 0 22px 0px; max-width: 51.7em;}
     .btn-view-staff{left: 317px;}
@@ -763,7 +759,6 @@
     .address-footer p:first-child{font-size: 0.9em; width: 35%; float: left; margin-left: -2%;}
     .address-footer p:nth-child(2){width: 30%; float: left; font-size: 1em;}
     .address-footer p:last-child{width: 26%; float: left; font-size: 1em; margin-left: 9%;}
-    .overlay-detail{width: 40%;}
     .wrap-img-product{width: 80%; height: 365px;}
     .product-detail-right{width: 80%;}
     .detail-product-right{width: 80%!important;}
@@ -785,19 +780,18 @@
     .linkBtn01 > li > a > * > .txt01{font-size: 20px;}
     .linkBtn01 > li > a{min-width: 300px; padding: 15px;}
     .linkBtn01 > li > a > .icn01 > .txt01:before{background-size: 30px; margin-top: -8px;}
-    .block-contact-phone-layout .spritephone:before{width: 13px;height:9px;left:16px;top:7px;}
-    .spritephone:before{width: 13px;height: 9px;left: 28px;top: 7px;}
-    .spritemail2:before{width: 38px;height: 17px;left: 9px;top: 14px;background-size: 100%;}
-    .spritemail2:hover:before{width: 18px;}
+    .block-contact-phone-layout .spritephone:before{width: 13px;height:9px;left:25px;top:7px;}
+    .spritephone:before{width: 13px;height: 9px;left: 30px;top: 7px;}
+    .spritemail2:before{width: 40px;height: 18px;left: 25px;top: 14px;background-size: 100%;}
+    .spritemail2:hover:before{width: 44px;height:17px;background-size:40%;}
     .address-footer p:first-child{position:relative;}
     .spritelocation-footer:before{background-position: 0 97%;left: 5px;height: 22px;}
     .address-footer p:nth-child(2){position: relative;}
     .spritemail-footer:before{background-position: 0 75%;left: 5px;margin-left: 0;}
     .address-footer p:last-child{position: relative;}
     .spritephone-footer:before{left: 2px;margin-left: 0;}
-    .btn-view-more:hover:before{top: 30%;}
-    .btn-fixed:hover:before{top:25%;}
     .btn-houses:hover:before{top:39%;}
+    .menu-header.common-header{height: 64px;}
 }
 @media screen and (min-width: 569px) and (max-width: 666px){
     .feature-appartment p{font-size: 0.62em;}
@@ -828,7 +822,7 @@
     /* benefit-block */
 
     /* sub-menu-list-header */
-    .sub-menu-list-header{margin-top: -5px; overflow: scroll; height: 320px;}
+    .sub-menu-list-header{margin-top: -5px; overflow: scroll; height: 250px;}
     .arrival-block{margin-top: 10px;}
     .arrival-title{width: 49%; margin-right: 1%;}
     .arrival-block .col-xs-3.arrival-add{width: 49%; margin-right: 1%; margin-bottom: 10px;}
@@ -860,8 +854,7 @@
     .map-content .type-map-des{width: 60%; margin-top: 0px;}
 
     /* list particular apartment */
-    .contact-detail{width: 100%; font-size: 1.4em; padding: 0.6em 0; margin: 2em 0em 0em;}
-    .overlay-detail{width: 40%;}
+    .contact-detail{width: 50%; font-size: 1.5em; padding: 0.8em 0; margin: 2em 0em 0em;}
     .introduce-district-box p{font-size: 1em;}
 }
 
@@ -879,21 +872,21 @@
     .button-arrival{margin-top: 15px;}
     .info-apartment .heading-title{}
     .btn-view-staff{left: 350px;}
+    .block-contact-mail p {padding: 1.3em 1em 1.2em 5.3em;}
 }
 
 @media screen and (max-width: 568px){
     /* header */
-    .menu-header .top-menu .block-contact-phone.block-contact-phone-common{margin-top: 0.15em;}
-    .menu-header .top-menu .block-contact-phone{right: 11.4em;}
     .block-contact-phone p{font-size: 0.75em;}
     .block-contact-phone p:first-child{background-size: 0.9em 0.9em; }
     .block-contact-phone.block-contact-phone-common p{background-position: 3.2em 0.8em;}
     .block-contact-phone.block-contact-phone-layout p{background-position: 1em 0.8em;}
-    .block-contact-mail{margin-top: 0.15em;}
-    .btn-menu{margin-top: 10px;}
-    .menu-header .top-menu .block-logo{width: 130px;}
     .block-logo p{font-size: 0.7em;}
     .block-contact-mail a{font-size: 0.75em;}
+    .block-contact-mail p{padding: 1.3em 1.4em 1.1em 5em;}
+    .btn-menu{width: 31px;margin-top: 10px;}
+    .btn-menu a .fa.fa-bars{font-size: 1.5em;}
+    .sub-menu-list-header{top: 61px;}
 
 
     /* .sub-introduce-staff{max-width: 49.6em;} */
@@ -962,17 +955,18 @@
     .linkBtn01 > li > a > * > .txt01{font-size: 20px;}
     .linkBtn01 > li > a{min-width: 300px; padding: 15px;}
     .linkBtn01 > li > a > .icn01 > .txt01:before{background-size: 30px; margin-top: -8px;}
-    .block-contact-phone-layout .spritephone:before{left: 15px; top: 6px;}
-    .spritephone:before{width: 13px;height: 9px;left: 26px;top: 6px;}
-    .spritemail2:before{width: 35px;height: 15px;left: 8px;top: 13px;background-size: 100%;}
-    .spritemail2:hover:before{width: 16px;height:15px;}
+    .block-contact-phone-layout .spritephone:before{left: 17px; top: 6px;}
+    .spritephone:before{width: 13px;height: 9px;left: 22px;top: 6px;}
+    .spritemail2:before{width: 35px;height: 16px;left: 18px;top: 15px;background-size: 100%;}
+    .spritemail2:hover:before{width: 44px;height:17px;background-size: 40%;}
     .btn-visible:before{width: 34px;height: 16px;top: 30%;}
-    .btn-view-more:hover:before{width: 36px;top: 28%;}
-    .btn-fixed:hover:before{width:27px; top:27%;}
+    .btn-view-more:hover:before{width: 36px;}
+    .btn-fixed:hover:before{width:27px;}
     .btn-houses:hover:before{top:39%;}
 
     /* Search box */
     .dropdown-submit .select2-container{width: 100%!important;margin-bottom: 15px;}
+    .menu-header.common-header{height: 61px;}
 }
 
 @media screen and (min-width: 415px) and (max-width: 567px){
@@ -1005,19 +999,14 @@
 
 @media screen and (min-width: 320px) and (max-width: 567px){
     /* page-top */
-    .menu-header .top-menu .block-logo{width: 25%;}
     .block-logo p{font-size: 0.7em;}
     .sub-content-list.four-line{top: 44%;}
-    .sub-menu-list-header{width: 60%; margin-top: 10px; overflow: scroll; height: 500px;}
+    .sub-menu-list-header{width: 60%; margin-top: 10px; overflow: scroll; height: 250px;top:38px;}
     .btn-visible{font-size: 0.6em;}
     .banner-content{margin-right: 0;}
     .btn-close-menu a{padding: 0.1em 0;}
     .block-contact-phone p{font-size: 0.55em;}
-    .block-contact-mail{position: absolute; margin-top: 0em; margin-bottom: 0em; margin-right: 0px; right: 55px;}
     .block-contact-mail a{font-size: 0.55em;}
-    .menu-header .top-menu .block-contact-phone.block-contact-phone-common{margin-top: 0em;}
-    .menu-header .top-menu .block-contact-phone{right: 10em;}
-    .btn-menu{margin-top: 4px; width: 30px;}
     .btn-menu a .fa.fa-bars{font-size: 1.4em;}
 
     /* search-box */
@@ -1039,7 +1028,6 @@
     .arrival-title p{font-size: 1.3em;}
     .arrival-title .button-arrival{margin: 1.2em 0 0 .2em; position: absolute; right: 15px; bottom: 10px;}
     .arrival-block .col-xs-3.arrival-items{width: 100%; margin-bottom: 1em;}
-    .btn-overlay{padding: 0.6em 2.5em 0.6em 0.7em;}
     .price-appartment{font-size: 16px;}
     .intro-content-appartment{font-size: 12px; line-height: 16px;}
     .name-appartment h3{font-size: 16px;}
@@ -1124,7 +1112,7 @@
     .staff-list .owl-nav .owl-next{margin-right: 10px; transform: scale(0.8);}
     .staff-list .owl-nav .owl-prev{margin-left: 46px; transform: scale(0.8);}
     .operation-company{padding: 10px 15px;}
-    .group-staff-button{height: 35px; top: 200px; position: absolute; z-index: 999; top: 365px;}
+    .group-staff-button{height: 35px; top: 200px; position: absolute; z-index: 999; top: 385px;}
 
     /* website-information */
     .website-information .des-info-item h4{font-size: 1em;}
@@ -1156,9 +1144,6 @@
     /* list-particular-apartment */
     .product-features .product-features-left a{font-size: 1.5em;}
     .product-features .product-features-left p{overflow: hidden;}
-    .contact-us-block.block_center_contact{width: 100%; padding: 0 15px;}
-    .contact-detail{width: 100%; font-size: 1.3em; padding: 0.6em 0; margin: 2em 0 0;}
-    .contact-us-block .content-tel{width: 100%; height: 80px;}
     .wrap-img-product{width: 100%;}
     .product-detail-right{width: 100%;}
     .detail-product-right{width: 100%!important;}
@@ -1172,7 +1157,7 @@
     ul.footer-contact li:last-child{width: auto; margin: 4px 5px;}
     ul.footer-contact li:last-child a{font-size: 10px; line-height: 35px;}
 
-    .sub-content-list.four-line{top: 30%;}
+    .sub-content-list.four-line{top: 32%;}
     .arrival-title .heading-title-arrival{font-size: 1.1em; margin-right: 0; margin-bottom: 0; padding-bottom: .2em; margin-top: 0;margin-top: 0.1em;}
     .arrival-block .col-xs-3.arrival-items:nth-child(2n){margin-left: 0;}
     .arrival-title p{font-size: 0.7em;}
@@ -1271,18 +1256,19 @@
     .linkBtn01 > li > a{min-width: 260px; padding: 12px;}
     .linkBtn01 > li > a > * > .txt01{font-size: 1.5em;}
     .formCheckboxList01 > li{margin: 5px 25px 0 0;}
-    .spritephone:before{background-position: 0 82%;width: 9px;height: 7px;left: 15px;top: 4px;}
+    .spritephone:before{background-position: 0 82%;width:11px;height: 8px;left: 22px;top: 6px;}
 
-    .spritemail2:before{background-position: 0 144%;width: 19px;height: 9px;left: 5px;top: 12px;background-size: 100%;}
-    .btn-visible:before{width: 15px;height: 8px;background-size: 275%;}
+    .spritemail2:before{background-position: 0 144%;width: 28px;height: 13px;left: 15px;top: 13px;background-size: 100%;}
+    .btn-visible:before{width: 16px;height: 8px;background-size: 275%;}
     .spritephone-footer:before{left: 0px;margin-left: 0px;}
     .spritemail-footer:before{left:  0px;margin-left: 0px;}
     .spritemail2:hover:before{width: 9px;height: 9px;}
-    .block-contact-phone-layout .spritephone:before{width: 9px;height: 7px;left:10px;top:4px;}
-    .btn-view-more:hover:before{width: 20px; height: 8px;right: -5px; top:30%;}
+    .block-contact-phone-layout .spritephone:before{width: 11px;height: 8px;left:17px;top:6px;}
+    .btn-view-more:hover:before{width: 22px; height: 8px;right: 0px; top:38%;background-position:0 60%;}
+    .btn-overlay:hover:before{width: 16px; top:34%;background-size:275%;}
     .spritelocation-footer:before{left: 0px;}
-    .btn-fixed:before{width: 24px; top:32%;}
-    .btn-fixed:hover:before{width: 27px; top: 32%;right: -3px;height: 12px;}
+    .btn-fixed:before{width: 24px; top:42%;}
+    .btn-fixed:hover:before{width: 22px; top: 42%;right: 0;height: 12px;}
     .btn-houses:before{top: 42%;}
     .btn-houses:hover:before{top:42%;}
 
@@ -1291,14 +1277,38 @@
     .feature-appartment-banner .feature-appartment-tow{width: 100%; padding: 0;margin-left: 0;margin-bottom: 15px;}
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px){
+@media screen and (min-width: 360px) and (max-width: 567px){
+    .block-contact-phone.block-contact-phone-common p{padding: 0.7em 0.8em 0.6em 0.8em;background-position: 2.9em 1em;}
+    .block-contact-phone p:first-child{padding: 0.8em 1em 0.4em 2.2em;}
+    .block-contact-mail a{font-size: 0.6em; background-size: 1.5em 1.3em; background-position: 0.8em;}
+    .btn-menu a{padding: 0.3em 0 0.3em 0;}
+    .block-contact-phone.block-contact-phone-layout p{background-position: 1em 1em;}
+    .menu-header .top-menu .block-logo{margin-top: 5px;}
+    .btn-menu{width: 26px;margin-top: 10px;}
+    .block-contact-mail p{padding: 1.4em 1em 1.3em 5em;}
+    .block-contact-phone p{font-size: 0.6em;}
+    .btn-menu a .fa.fa-bars{font-size: 1.2em;}
+    .btn-close-menu a {padding:0;font-size: 1.2em;}
+}
+
+@media screen and (max-width: 480px){
     #toggle-label{font-size: 1.4em; padding: 1em 1em;}
     #toggle-label:after{right: 10px; top: 29%;transform:scale(0.7);}
     #toggle-label.active:after{top:29%;transform: rotate(90deg) scale(0.7);}
-    .wrapper-content-block a#toggle-label:first-child{padding: 1.3em 0.8em 1.2em;}
+    .wrapper-content-block a#toggle-label:first-child{padding: 1em 1em;}
+    .btn-menu{margin-top: 10px;}
+    .menu-header .top-menu .block-logo{margin-top: 10px;}
+    .sub-menu-list-header{top: 38px;}
+    .block-contact-mail p{padding: 1.4em 1.5em 1.3em 5.5em;}
+    .spritemail2:before{left:17px;width:30px;height:14px;top:12px;}
+    .spritemail2:hover:before{width: 36px;height: 14px;}
+    .menu-header.common-header{height: 53px;}
 }
 
 @media screen and (max-width: 414px){
+    .menu-header .top-menu .block-logo{margin-top: 5px;}
+    .btn-menu{margin-top: 7px;width: 24px;}
+    .sub-menu-list-header{top: 31px;height:450px;}
     .option-item-footer span:first-child{width: 45.5%; float: left; margin-right: 3%; margin-left: 1.5%;}
     .option-item-footer span:last-child{width: 47%; float: left; margin-left: 3%; margin-right: 0;}
     .map-content #drawing svg{transform: scale(0.45); left:-337px; top: 40px; width: 980px;}
@@ -1330,6 +1340,15 @@
     #info-feature-appartment{height:56px;}
     .feature-appartment p{padding-top: 5px;}
     .introduce-district-info{height: 53px;}
+    .contact-detail{width: 100%;}
+    .block-contact-phone p{font-size: 0.5em;}
+    .block-contact-mail a{font-size:0.5em;}
+    .block-contact-mail p{padding: 1.5em 2.2em 1.2em 5em;}
+    .spritephone:before{width: 10px;height: 8px;left: 19px;top: 4px;}
+    .block-contact-phone-layout .spritephone:before{width: 10px;height: 8px;left: 16px;top: 4px;}
+    .spritemail2:before{width: 25px;height: 12px;left: 13px;top: 9px;}
+    .spritemail2:hover:before{width: 29px;height:11px;}
+    .menu-header.common-header{height: 46px;}
 }
 
 @media screen and (max-width: 375px){
@@ -1352,52 +1371,35 @@
     .info-redirect-appartment{height: 55px;}
     .redirect-appartment p{font-size: 1.2em;height: 47px;}
     .redirect-appartment p a{line-height: 23px;}
-
-}
-
-@media screen and (min-width: 360px) and (max-width: 567px){
-    .block-contact-phone.block-contact-phone-common p{padding: 0.7em 0.8em 0.6em 0.8em;}
-    .block-contact-phone p:first-child{padding: 0.8em 1em 0.4em 2.2em;}
-    .block-contact-mail a{font-size: 0.7em; background-size: 1.5em 1.3em; background-position: 0.8em;}
-    .btn-menu a{padding: 0.23em 0 0.23em 0;}
-    .block-contact-phone.block-contact-phone-common p{background-position: 2.9em 1em;}
-    .block-contact-phone.block-contact-phone-layout p{background-position: 1em 1em;}
-    .menu-header .top-menu .block-logo{width: 23%;}
-    .btn-menu{margin-top: 8px; width: 24px;}
-    .menu-header .top-menu .block-contact-phone{right: 7.4em;}
-    .menu-header .top-menu .block-contact-phone.block-contact-phone-common{margin-top: 0.1em;margin-right: 0.4em;}
-    .block-contact-mail a{font-size: 0.5em;}
-    .block-contact-mail{position: absolute; margin-top: 0.1em; margin-bottom: 0em; margin-right: 0px; right: 44px;}
-    .block-contact-mail p{padding: 1.4em 0.7em 1.3em 3em;}
-    .block-contact-phone p{font-size: 0.5em;}
-    .btn-menu a .fa.fa-bars{font-size: 1.2em;}
-    .btn-close-menu a {padding:0;font-size: 1.2em;}
+    .eco-steps-block .eco-steps ul li{width: 100%;height:auto;}
+    .block-contact-mail p{padding: 1.4em 1.3em 1.3em 4.5em;}
+    .spritemail2:before{width: 23px;height: 11px;left: 11px;top: 10px;}
+    .spritephone:before{width: 9px;height: 7px;left: 17px;}
+    .block-contact-phone-layout .spritephone:before{width: 9px;height: 7px;left: 14px;}
+    .btn-menu{margin-top: 8px;}
 }
 
 @media screen and (max-width: 360px){
     .info-one-detail .favorite-social{width: 33%;}
     .banner-content .text-two{font-size: 1.4em;}
+    .block-contact-mail p{padding: 1.3em 1.3em 1.1em 4em;}
 }
 @media screen and (min-width: 320px) and (max-width: 360px){
     .block-contact-phone.block-contact-phone-common p{padding: 0.8em 0.7em 0.7em 0.7em;}
     .block-contact-phone p:first-child{padding: 0.8em 1em 0.5em 2.2em;}
     .block-contact-mail a{font-size: 0.7em; background-size: 1.5em 1.3em; background-position: 0.8em;}
-    .btn-menu a{padding: 0.2em 0 0em 0;}
+    .btn-menu a{padding: 0.2em 0 0.2em 0;}
+    .top-menu .block-contact-phone.block-contact-phone-common{width: 90%;margin: 0 5%;}
+    .top-menu .block-contact-phone.block-contact-phone-layout{width: 85%;margin: 0 0 0 12.5%;}
+    .block-contact-mail{margin-left: 2.5%;}
     .block-contact-phone.block-contact-phone-common p{background-position: 2.7em 1em;}
     .block-contact-phone.block-contact-phone-layout p{background-position: 1em 1em;}
-    .menu-header .top-menu .block-logo{width: 23%;}
-    .btn-menu{margin-top: 7px; width: 24px;}
-    .menu-header .top-menu .block-contact-phone{right: 7.2em;}
-    .menu-header .top-menu .block-contact-phone.block-contact-phone-common{margin-top: 0.1em;margin-right: 0.3em;}
+    .btn-menu{margin-top: 8px; width: 22px;}
     .block-contact-mail a{font-size: 0.5em;}
-    .block-contact-mail{position: absolute; margin-top: 0.1em; margin-bottom: 0em; margin-right: 0px; right: 43px;}
-    .block-contact-mail p{padding: 1.3em 0.5em 1em 2.8em;}
     .block-contact-phone p{font-size: 0.455em;}
-    .btn-menu a .fa.fa-bars{font-size: 1.2em;}
-    .btn-close-menu a {padding:0;font-size: 1.2em;}
-    .spritemail2:before{top: 10px;left: 5px;}
-    .block-contact-phone-layout .spritephone:before{width: 8px;height:6px;left:7px;top:5px;}
-    .spritephone:before{width: 8px; height: 6px;left:14px;top: 5px;}
+    .btn-menu a .fa.fa-bars{font-size: 1.1em;}
+    .btn-close-menu a {padding:0;font-size: 1em;}
+    .spritemail2:before{left: 8px;top: 9px;}
 }
 
 @media screen and (max-width: 320px){
@@ -1407,7 +1409,7 @@
     .icon-navsprites-building{transform: scale(0.6); transform-origin: 10px 14px;}
     #info-feature-appartment{height: 45px;}
     .feature-appartment p{font-size: 1em;padding-left: 40px;}
-    .price_area .local{margin: 11px 10px 20px 10px;}
+    .price_area .local{margin: 11px 10px 10px 0px;}
     .common-repair{left: -11%; position: absolute;font-size: 12px!important;}
     .website-information .des-info-item h4{line-height: 24px; font-size: 1em;}
     .time-block{padding: 14.5px 0 0 20px;}
@@ -1419,4 +1421,13 @@
     .introduce-district-box p{font-size: 1.3em;padding-left:40px;padding-top: 2px;}
     .banner-content .text-two{font-size: 1.25em;}
     .btn-search a:before{right: 31%;}
+    .btn-menu{width: 20px;}
+    .btn-menu a .fa.fa-bars{font-size: 1em;}
+    .block-contact-mail p{padding: 1.3em 1em 1em 3.5em;}
+    .block-contact-mail{width: 90%;}
+    .spritemail2:before{width: 21px;height: 10px;left: 7px;}
+    .spritephone:before{width: 8px;height: 6px;left: 15px;}
+    .block-contact-phone-layout .spritephone:before{width: 8px;height: 6px;left: 11px;}
+    .spritemail2:hover:before{width: 24px;height:10px;}
+    .menu-header.common-header{height: 44px;}
 }
